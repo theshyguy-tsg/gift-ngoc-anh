@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Ngọc Anh 🌿</title>
+
+    <link rel="icon" type="image/png" href="./img/deco1.png">
+    
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Patrick+Hand&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="starContainer"></div>
+        <div class="fog-container">
+            <div class="fog-img fog-img-first"></div>
+            <div class="fog-img fog-img-second"></div>
+        </div>
+
+        <div class="boxCloud">
+            <div class="cloud"></div>
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+        </div>
+
+        <div class="intro-layer" id="introLayer">
+            <div class="boxTitle">
+                <div class="boxTitle">
+                    <p class="firstTitle partTitle">Gửi Ngọc Anh</p>
+                    <p class="secondTitle partTitle">chút tâm tình bé nhỏ 💌</p>
+                </div>
+            </div>
+            <div class="btnBox">
+                <div class="cloudBtn"></div>
+                <button class="openBtn" id="introBtn">Click vào đây để mở thư✨</button>
+            </div>
+        </div>
+
+        <div class="choice-layer hidden" id="choiceLayer">
+            <div class="minigameBox">
+                <p class="question" id="questionText">Ngọc Anh có mún đọc thư anh viết hong dợ? 🥺</p>
+                <div class="btnGroup">
+                    <button class="btnYes" id="yesReadBtn">Đọc thư liền 💓</button>
+                    <button class="btnNo" id="noReadBtn">Hong chịu đọc!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="letter-layer hidden" id="letterLayer">
+            <div class="game-ui active">
+                <div class="score-board">
+                    <img src="./img/deco1.png" style="width: 25px; vertical-align: middle;"> 
+                    <span id="score">0</span>/6
+                </div>
+                <div class="mission-text">Tìm đủ 6 ly Matcha để nhận quà nha! 👇</div>
+            </div>
+
+            <div id="gameArea"></div>
+
+            <div class="cardValentine">
+                <div class="left">
+                    <div class="leftFront">
+                        <img class="coverImage" src="./img/cover.jpg" alt="Cover">
+                    </div>
+                    <div class="leftBack"></div>
+                </div>
+                <div class="right">
+                    <div class="rightContent">
+                        <p class="letterContent"></p>
+                        <button id="receiveGiftBtn" class="hidden">Nhận quà nè 🎁</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gift-layer hidden" id="giftLayer">
+            <div class="gift-box" id="giftBox">🎁<div class="gift-shadow"></div></div>
+            <p class="gift-hint">Bấm vào hộp quà đi nè!</p>
+        </div>
+
+        <div class="final-layer hidden" id="finalLayer">
+            <div id="fallingContainer"></div>
+            <div class="callBox">
+                <p class="callMsg">Anh nhớ em gòi! Call cho anh đi! 📞💚</p>
+                <a href="https://m.me/tran.buianhnam" target="_blank">
+                  <button class="messBtn">Call Me Right Now</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="sound" loop>
+        <source src="./music.mp3" type="audio/mpeg" /> 
+    </audio>
+
+    <script src="./main.js"></script>
+</body>
+</html>

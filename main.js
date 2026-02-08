@@ -6,12 +6,20 @@ var letterContent = "Gửi Ngọc Anh! Tổng đài Matcha xin nghe 🌿📞<br>
 
 var durationWrite = 20;
 
+// Cập nhật danh sách câu nói rơi xuống (Thêm mấy câu "xàm" vào)
 const loveQuotes = [
-    "Iu Ngọc Anh nhìu ❤️", "Hết giận nha 🥺", "Cười lên nè 😁", 
-    "Matcha chữa lành 🍵", "Bé ngoan 🌿", "Love you 💚", "Xin lỗi bấy bi ✨",
-    "Thương lắm 💖", "Ôm cái nè 🙆‍♂️"
+    "Iu Ngọc Anh nhìu ❤️", 
+    "Hết giận nha 🥺", 
+    "Matcha tới bắt em kìa 🍵",  // Mới thêm
+    "Ăn thịt em đó 😈",        // Mới thêm
+    "Chạy đâu cho thoát 🏃‍♂️",    // Mới thêm
+    "Bắt được là hôn nha 💋",    // Mới thêm
+    "Ngon thì đứng lại 😝",      // Mới thêm
+    "Matcha chữa lành 🌿", 
+    "Love you 💚", 
+    "Mau hồi sức nha ✨",
+    "Ôm cái nè 🙆‍♂️"
 ];
-
 let collectedCount = 0;
 const targetCount = 6;
 let gameInterval;
